@@ -3,11 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <title>Rifatul Islam Rana</title>
+    <meta name="description" content="Portfolio of Rifatul Islam Rana">
+    <meta name="keywords" content="Rifatul Islam Rana, Digital Marketing, Web Design, Coding, Card Design, Bangladesh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f8fa; }
+        header { background: #1e2732; color: #fff; text-align: center; padding: 28px 0 16px 0;}
+        header h1 { margin: 0; font-size: 2.2em; }
+        nav { display: flex; justify-content: center; gap: 24px; background: #fff; box-shadow: 0 2px 8px #ddd; }
+        nav button { background: none; border: none; font-size: 1.1em; padding: 12px 18px; cursor: pointer; transition: background 0.2s; }
+        nav button.active, nav button:hover { background: #e1e7ed; border-radius: 6px; }
+        .container { display: flex; justify-content: center; align-items: flex-start; gap: 50px; margin: 40px auto 0 auto; max-width: 970px; }
+        .profile-pic { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 5px solid #1e2732; background: #fff; }
+        .bio { background: #fff; border-radius: 12px; padding: 28px 32px; box-shadow: 0 2px 16px #e2e7f1; min-width: 320px; }
+        .bio h2 { margin: 0 0 10px 0; font-size: 1.7em; color: #1e2732; }
+        .bio p { font-size: 1.1em; color: #3e4857; }
+        .section { display: none; background: #fff; margin: 30px auto 0 auto; max-width: 650px; border-radius: 12px; box-shadow: 0 2px 10px #e2e7f1; padding: 30px 32px; }
+        .section.active { display: block; }
+        .about-list { margin-top: 20px; }
+        .about-list li { margin: 8px 0; font-size: 1.07em; }
+        .graphics-gallery { display: flex; gap: 18px; margin-top: 28px; }
+        .graphics-gallery img { width: 100px; height: 100px; object-fit: cover; border-radius: 10px; border: 2px solid #e6e6e6; }
+        .photo-gallery { display: flex; flex-wrap: wrap; gap: 18px; }
+        .photo-gallery img { width: 140px; height: 140px; object-fit: cover; border-radius: 8px; border: 2px solid #d2d2d2; }
+        .contact-icons { display: flex; gap: 25px; margin-top: 30px; }
+        .contact-icons a { text-decoration: none; color: #1e2732; }
+        .contact-icons svg { width: 38px; height: 38px; transition: transform 0.2s; }
+        .contact-icons a:hover svg { transform: scale(1.15); }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; align-items: center; gap: 24px; }
+            .bio { min-width: 230px; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Rifatul Islam Rana</h1>
-    <p><strong>Name:</strong> Rifatul Islam Rana</p>
-    <p><strong>Address:</strong> Aditmari</p>
-    <p><strong>Post:</strong> 5510</p>
+    <header>
+        <h1>Rifatul Islam Rana</h1>
+        <p style="margin:10px 0 0 0; font-size:1em;">Personal Portfolio Website</p>
+    </header>
+
+    <div class="container">
+        <div>
+            <!-- Photo 1: Replace the src with your actual photo file name if different -->
+            <img src="photo1.jpg" alt="Rifatul Islam Rana" class="profile-pic">
+        </div>
+        <div class="bio">
+            <h2>Rifatul Islam Rana</h2>
+            <p>
+                My name is Rifatul Islam Rana.<br>
+                I am a citizen of Bangladesh.<br>
+                My religion is Islam.
+            </p>
+        </div>
+    </div>
+
+    <nav>
+        <button id="aboutBtn" class="active">About</button>
+        <button id="photoBtn">Photo</button>
+        <button id="contactBtn">Contact</button>
+    </nav>
+
+    <!-- About Section -->
+    <div id="aboutSection" class="section active">
+        <h2>About</h2>
+        <p>
+            My name is Rifatul Islam Rana. I am a citizen of Bangladesh. My religion is Islam.<br>
+            I have gained expertise in some areas, such as:
+        </p>
+        <ul class="about-list">
+            <li>• Digital marketing</li>
+            <li>• Card design</li>
+            <li>• Web designing</li>
+            <li>• Coding</li>
+        </ul>
+        <div class="graphics-gallery">
+            <!-- Replace these with your actual graphics images -->
+            <img src="graphics1.jpg" alt="Graphics 1">
+            <img src="graphics2.jpg" alt="Graphics 2">
+            <img src="graphics3.jpg" alt="Graphics 3">
+        </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div id="photoSection" class="section">
+        <h2>Photo Gallery</h2>
+        <div class="photo-gallery">
+            <!-- Add your photos here. "photo1.jpg" is shown as an example. -->
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contactSection" class="section">
+        <h2>Contact Me</h2>
+        <p>Thank you very much for visiting my website. How can I help you? If you want, you can contact me directly through the options below.</p>
+        <div class="contact-icons">
+            <!-- Telegram -->
+            <a href="https://t.me/Digital_marketing_Top_1" target="_blank" title="Telegram">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9.04 16.57L8.98 20.09C9.42 20.09 9.61 19.91 9.83 19.7L11.67 18.01L15.82 21.03C16.57 21.43 17.11 21.21 17.3 20.36L19.94 7.13C20.18 6.08 19.54 5.64 18.83 5.89L3.92 11.25C2.89 11.63 2.9 12.19 3.75 12.43L7.7 13.61L16.13 8.47C16.53 8.23 16.89 8.36 16.59 8.61L9.04 16.57Z" fill="#2AABEE"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/rifatul28" target="_blank" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22.675 0h-21.35C.599 0 0 .6 0 1.326v21.348C0 23.4.599 24 1.325 24h11.495v-9.294H9.69v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0" fill="#4267B2"/></svg>
+            </a>
+            <!-- Gmail -->
+            <a href="mailto:rifatulislam4352@gmail.com" title="Gmail">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M1.5 4.5C1.5 3.12 2.62 2 4 2h16c1.38 0 2.5 1.12 2.5 2.5v15c0 1.38-1.12 2.5-2.5 2.5H4c-1.38 0-2.5-1.12-2.5-2.5v-15zM4 4l8 5 8-5" stroke="#EA4335" stroke-width="2"/>
+                </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/8801791406628" target="_blank" title="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.149-.197.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.67-1.611-.916-2.209-.242-.583-.487-.504-.67-.513l-.571-.01c-.198 0-.52.074-.793.372C2.876 8.974 2.5 10.06 2.5 11.25c0 4.136 3.364 7.5 7.5 7.5 1.19 0 2.276-.376 3.179-1.019-.298-.073-.593-.173-.867-.297z" fill="#25D366"/></svg>
+            </a>
+            <!-- Phone -->
+            <a href="tel:+8801791406628" title="Call">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.091 15.091 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.9.76a1 1 0 011 1v3.49a1 1 0 01-1 1C10.61 22 2 13.39 2 3.5a1 1 0 011-1h3.49a1 1 0 011 1c0 1.37.27 2.69.76 3.9a1 1 0 01-.21 1.11l-2.2 2.2z" fill="#34B7F1"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching JS
+        const aboutBtn = document.getElementById('aboutBtn');
+        const photoBtn = document.getElementById('photoBtn');
+        const contactBtn = document.getElementById('contactBtn');
+        const aboutSection = document.getElementById('aboutSection');
+        const photoSection = document.getElementById('photoSection');
+        const contactSection = document.getElementById('contactSection');
+
+        aboutBtn.onclick = () => {
+            aboutBtn.classList.add('active');
+            photoBtn.classList.remove('active');
+            contactBtn.classList.remove('active');
+            aboutSection.classList.add('active');
+            photoSection.classList.remove('active');
+            contactSection.classList.remove('active');
+        };
+        photoBtn.onclick = () => {
+            aboutBtn.classList.remove('active');
+            photoBtn.classList.add('active');
+            contactBtn.classList.remove('active');
+            aboutSection.classList.remove('active');
+            photoSection.classList.add('active');
+            contactSection.classList.remove('active');
+        };
+        contactBtn.onclick = () => {
+            aboutBtn.classList.remove('active');
+            photoBtn.classList.remove('active');
+            contactBtn.classList.add('active');
+            aboutSection.classList.remove('active');
+            photoSection.classList.remove('active');
+            contactSection.classList.add('active');
+        };
+    </script>
 </body>
 </html>
