@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rifatul Islam Rana</title>
+    <meta name="description" content="Personal website of Rifatul Islam Rana. Name, address, and postal information.">
+</head>
+<body>
+    <h1>Rifatul Islam Rana</h1>
+    <p><strong>Name:</strong> Rifatul Islam Rana</p>
+    <p><strong>Address:</strong> Aditmari</p>
+    <p><strong>Post:</strong> 5510</p>
+</body>
+</html>
