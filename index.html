@@ -12,10 +12,14 @@
             min-height: 100vh;
             margin: 0;
             font-family: 'Roboto', Arial, sans-serif;
-            background: linear-gradient(120deg, #e0f7fa 0%, #fce4ec 100%);
-            background-image: url('https://svgshare.com/i/16A2.svg');
-            background-repeat: repeat;
+            /* Beautiful floral background image, soft opacity */
+            background: 
+                linear-gradient(120deg, #e0f7fa 0%, #fce4ec 100%),
+                url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
         }
         header {
             background: linear-gradient(90deg, #7b4397 0%, #dc2430 100%);
@@ -110,6 +114,8 @@
             border-radius: 22px;
             box-shadow: 0 4px 20px #a7ffeb60;
             padding: 34px 38px;
+            backdrop-filter: blur(1.5px);
+            background: rgba(255,255,255,0.87);
         }
         .section.active {
             display: block;
@@ -120,15 +126,15 @@
             to { opacity: 1; transform: translateY(0);}
         }
         #aboutSection {
-            background: linear-gradient(120deg, #ffe0e9 0%, #e0f7fa 100%);
+            background: linear-gradient(120deg, #ffe0e9cc 0%, #e0f7facc 100%);
             border: 2.5px solid #f8b500;
         }
         #photoSection {
-            background: linear-gradient(120deg, #f3e5f5 0%, #e0f2f1 100%);
+            background: linear-gradient(120deg, #f3e5f5cc 0%, #e0f2f1cc 100%);
             border: 2.5px solid #7b4397;
         }
         #contactSection {
-            background: linear-gradient(120deg, #e0f9b5 0%, #ffe0e9 100%);
+            background: linear-gradient(120deg, #e0f9b5cc 0%, #ffe0e9cc 100%);
             border: 2.5px solid #00b894;
         }
         .about-list {
